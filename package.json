@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@socket.io/admin-ui": "^0.5.1",
+    "http": "^0.0.1-security",
+    "socket.io": "^4.7.2",
+    "uWebSockets.js": "uNetworking/uWebSockets.js#v20.4.0"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.8",
+    "utf-8-validate": "^6.0.3"
+  }
+}
