@@ -24,6 +24,17 @@ io.on("connection", (socket) => {
 });
 
 
+httpServer.on("request", (req, res) => {
+  if (req.url === "/") {
+    res.writeHead(200, { "Content-Type": "text/plain" });
+    res.end(":)");
+  } else {
+    res.writeHead(404, { "Content-Type": "text/plain" });
+    res.end("Página não encontrada.");
+  }
+});
+
+
 httpServer.listen(3000, () => {
   console.log("Servidor Socket.IO rodando na porta 3000");
 });
