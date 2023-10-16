@@ -24,6 +24,6 @@ io.on("connection", (socket) => {
 });
 
 
-httpServer.listen(443, () => {
+httpServer.listen(3000, () => {
   console.log("Servidor Socket.IO rodando na porta 3000");
 });
